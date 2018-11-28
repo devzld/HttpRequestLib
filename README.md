@@ -9,9 +9,9 @@
 + 可以方便地设置全局或单个header
 
 ### 1.引入：
-
+```gradle
     implementation 'com.devzld:HttpRequestLib:1.0.0'
-    
+```
 
 ### 2.在APP的application里初始化：
 
@@ -44,6 +44,7 @@
             
 ### 3.使用：
 
+```java
 	new HttpRequest("/api/random/data/Android/20")
 	                .params("param1", "param1")
 	                .headers("header1", "header1")
@@ -59,5 +60,6 @@
 	                    }
 	                })
 	                .get(mDisposable);
+```
 	                    
 	            
