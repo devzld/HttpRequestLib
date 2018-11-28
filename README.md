@@ -1,15 +1,15 @@
 # HttpRequestLib
-一个封装了OKhttp和retrofit的简单易用的网络库
+一个封装了OkHttp和Retrofit的简单易用的网络库
 
 + 链式调用方式，简单易用
 + 配合Rxjava,支持请求取消
 + 支持每个请求使用完整的URL或使用全局的baseUrl
-+ 自定义OKhttp的配置
++ 自定义OkHttp的配置
 + 可以监听请求前和后的回调
 + 可以方便地设置全局或单个header
 
 ### 1.引入：
-```gradle
+```gadle
     implementation 'com.devzld:HttpRequestLib:1.0.0'
 ```
 
