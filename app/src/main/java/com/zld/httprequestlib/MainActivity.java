@@ -33,15 +33,17 @@ public class MainActivity extends AppCompatActivity {
 
     private void requestData() {
         new HttpRequest("/api/random/data/Android/20")
+                .params("param1", "param1")
+                .headers("header1", "header1")
                 .requestCallback(new IRequestCallback() {
                     @Override
                     public void onPreRequest() {
-                        //做初始化等待对话框的操作
+                        //做一些请求前的准备，比如显示等待对话框
                     }
 
                     @Override
                     public void onAfterRequest() {
-                        //取消等待对话框
+                        //请求后的操作，比如取消等待对话框
                     }
                 })
                 .callback(new IHttpCallback() {
