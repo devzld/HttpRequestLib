@@ -9,7 +9,7 @@
 + 可以方便地设置全局或单个header
 
 ### 1.引入：
-```gadle
+```gradle
     implementation 'com.devzld:HttpRequestLib:1.0.0'
 ```
 
